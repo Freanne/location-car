@@ -3767,6 +3767,9 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 
+      .navbar-nav .nav-link:hover {
+        color: orange;
+    }
 .card {
   position: relative;
   display: -webkit-box;
@@ -8195,8 +8198,10 @@ h1, h2, h3, h4, h5,
     color: #fff;
     font-weight: 400;
     opacity: 1 !important; }
-    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #01d28e; }
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover
+     {
+      color: rgb(245, 152, 46) ; 
+    }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;

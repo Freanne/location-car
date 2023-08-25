@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      .navbar-nav .nav-item.active .nav-link {
+    color: orange; /* Changer la couleur du texte */
+}
+    </style>
   </head>
   <body>
     
@@ -37,10 +42,10 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
+	          <li class="nav-item active" ><a href="index.html" class="nav-link">Accueil</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
 	          <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
-	          <li class="nav-item"><a href="car.html" class="nav-link">Nos voitures</a></li>
+	          <li class="nav-item"><a href="user-dashboard.html" class="nav-link">Nos voitures</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contactez-nous</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Se connecter</a></li>
 	        </ul>
@@ -195,8 +200,8 @@
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
                       <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                      <a class="btn btn-dark py-2 mr-1"
-                        onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                      <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                        >Details</a>
                     </p>
 		    					</div>
 		    				</div>
@@ -562,7 +567,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>book</span></a></h2>
+              <a href="index.html"><span><img src="images/processed-removebg-preview.png" alt="" width="90"></span></a>
               <p>Votre meilleur agence pour la location de voitures de tout genre</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -571,7 +576,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md">
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Information</h2>
               <ul class="list-unstyled">
@@ -582,8 +587,8 @@
                 <li><a href="#" class="py-2 d-block">Politique &amp; de confidentialité et cookies</a></li>
               </ul>
             </div>
-          </div>
-          <div class="col-md">
+          </div> -->
+          <!-- <div class="col-md">
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Service client</h2>
               <ul class="list-unstyled">
@@ -594,8 +599,8 @@
                 <li><a href="#" class="py-2 d-block">Contactez-nous</a></li>
               </ul>
             </div>
-          </div>
-          <div class="col-md">
+          </div> -->
+          <!-- <div class="col-md">
             <div class="ftco-footer-widget mb-4">
             	<h2 class="ftco-heading-2">Vous avez des questions?</h2>
             	<div class="block-23 mb-3">
@@ -606,13 +611,13 @@
 	              </ul>
 	            </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>
