@@ -44,7 +44,7 @@
     
   }*/
 
-  .inscrire{
+  /* .inscrire{
     border: 1px solid orange;
     margin-right:15px;
     border-radius: 10px;
@@ -55,18 +55,18 @@
     color: white;
     border: 1px solid white;
     border-radius: 10px;
-}
-@media (max-width: 768px) {
-  /* Styles à appliquer en mode responsive (écran jusqu'à 768px de large) */
+} */
+/* @media (max-width: 768px) {
+
   .inscrire,
   .connect {
-    /* Réinitialisation des styles des boutons pour le mode responsive */
+
     border: none;
     background-color: transparent;
     color: black;
-    text-align: left; /* Alignement du texte à gauche */
-    margin-left: 15px; /* Ajout d'une marge à gauche */
-    margin-right: 0; /* Suppression de la marge à droite */
+    text-align: left; 
+    margin-left: 15px; 
+    margin-right: 0; 
   }
   }
 
@@ -119,11 +119,11 @@
     margin-top:10px ;
     border-radius: 10px;
     padding: 10px 40px;
-    /* cursor: pointer; */
+
 
   }
 
-  .signup-link {
+  /* .signup-link {
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -138,7 +138,7 @@
     text-align:center;
     height: 50px;
     font-weight: bolder;
-  }
+  }  */
     </style>
   </head>
   <body>
@@ -157,13 +157,13 @@
 	          <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
 	          <li class="nav-item"><a href="user-dashboard.html" class="nav-link">Nos voitures</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contactez-nous</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Se connecter</a></li>
+            <li class="nav-item"><a href="connexion.html" class="nav-link">Se connecter</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    
+<!--     
 <main class="container moved">
                 <div class="mt-4">
                     <img src="images/retouchelogo.jpg" alt="logo"  width="100px">
@@ -189,7 +189,64 @@
                     <a href="#" class="signup-link">S'inscrire</a>
 
                 </div>
-        </main>
+        </main> -->
+        <form class="form-driver-signup" id="driver-signup-form" action="https://gozem.co/bj/wp-admin/admin-post.php" method="post" novalidate="novalidate">
+          <div class="form-label-group">
+              <input type="text" id="input-fname" name="first_name" class="form-control valid" placeholder="Prénom" autofocus="" aria-invalid="false">    
+              <label for="input-fname">Prénom</label>
+          </div>
+          <div class="form-label-group">
+              <input type="text" id="input-lname" name="last_name" class="form-control" placeholder="Nom de Famille" autofocus="">    
+              <label for="input-lname">Nom de Famille</label>
+          </div>
+          <div class="form-label-group">
+              <input type="email" id="input-email" name="email" class="form-control" placeholder="Adresse email" autofocus="">
+              <label for="input-password">Adresse email</label>
+          </div>
+          <div class="form-group row city-selection">                            
+              <label for="input-city" class="col-md-4">Ville</label>
+              <div class="col-md-8">
+                  <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" id="dropdown-city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         Sélectionnez une ville                                    </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown-city">
+                      <li class="dropdown-item" data-id="5c18e9e26f2b922553babd4f">Cotonou, Benin</li><li class="dropdown-item" data-id="5d447beb09e3ab5ef6aee61b">Porto-Novo, Benin</li><li class="dropdown-item" data-id="5e15d93a53dc495a7c7806db">Parakou, Benin</li><li class="dropdown-item" data-id="5e15da3bb95f235a72a25728">Bohicon, Benin</li><li class="dropdown-item" data-id="5f3cdc7b1dba9e22a3109e25">Natitingou, Benin</li>                                    </ul>
+                  </div>
+                  <input type="hidden" id="country-id-value" value="" name="country_id_value">
+              </div>                            
+          </div>
+          <div class="form-group">
+              <label class="control-label">Téléphone</label>
+              <div class="row">
+                  <div class="col-4 country-code-selection">
+                      <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="flag-icon flag-icon-bj nav-icon"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdown-language" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                              <li class="dropdown-item" data-code="228"><span class="flag-icon flag-icon-tg"></span> Togo</li>
+                              <li class="dropdown-item" data-code="229"><span class="flag-icon flag-icon-bj"></span> Benin</li>
+                              <li class="dropdown-item" data-code="226"><span class="flag-icon flag-icon-bf"></span> Burkina Faso</li>
+                              <li class="dropdown-item" data-code="237"><span class="flag-icon flag-icon-cm"></span> Cameroun</li>
+                              <li class="dropdown-item" data-code="225"><span class="flag-icon flag-icon-ci"></span> Côte d’Ivoire</li>
+                              <li class="dropdown-item" data-code="241"><span class="flag-icon flag-icon-ga"></span> Gabon</li>
+                              <li class="dropdown-item" data-code="223"><span class="flag-icon flag-icon-ml"></span> Mali</li>
+                              <li class="dropdown-item" data-code="221"><span class="flag-icon flag-icon-sn"></span> Senegal</li>
+                          </ul>
+                      </div>
+                      <span class="country-code-label">+229</span>
+                      <input type="hidden" id="country-code-value" value="229" name="country_phone_code">
+                  </div>
+                  <div class="col-8">
+                      <input type="phone" class="form-control" name="phone">
+                  </div>
+                                                  <input type="hidden" value="https://gozem.co/bj/fr/conduisez-avec-nous" name="current_url">
+                  <input type="hidden" class="form-control" name="action" value="driver_signup">
+              </div>
+          </div>                
+          <input type="hidden" class="form-control" name="referrer" value="https://gozem.co/bj/fr/coronavirus/">        
+          <button type="submit" class="btn btn-secondary">Rejoignez-nous</button>
+      </form>
 
     <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
