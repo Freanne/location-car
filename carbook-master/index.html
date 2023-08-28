@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Mara-Auto</title>
+    <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -25,13 +25,16 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
+
+    <!-- Favicons -->
+  <link href="images/processed-removebg-preview.png" rel="icon">
+  <link href="nd/assets/img/apple-touch-icon.jpg" rel="apple-touch-icon">
     <style>
       .navbar-nav .nav-item.active .nav-link {
     color: orange; /* Changer la couleur du texte */
 }
     </style>
-
+  </head>
   <body>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -46,9 +49,9 @@
 	          <li class="nav-item active" ><a href="index.html" class="nav-link">Accueil</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
 	          <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
-	          <li class="nav-item"><a href="nosvoitures.html" class="nav-link">Nos voitures</a></li>
+	          <li class="nav-item"><a href="user-dashboard.html" class="nav-link">Nos voitures</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contactez-nous</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Se connecter</a></li>
+            <li class="nav-item"><a href="connexion.html" class="nav-link">Se connecter</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -100,7 +103,7 @@
 		                <input type="text" class="form-control" id="time_pick" placeholder="Time">
 		              </div>
 			            <div class="form-group">
-			              <input type="submit" value="Faites la réservation" class="btn btn-dark py-3 px-4">
+			              <a type="submit"  class="btn  py-3 px-4" style="background-color: #36454F; color:white">Faites la réservation</a>
 			            </div>
 			    			</form>
 	  					</div>
@@ -118,7 +121,7 @@
 					          </div>
 					          <div class="col-md-4 d-flex align-self-stretch ftco-animate">
 					            <div class="services w-100 text-center">
-				              	<div class="icon d-flex align-items-center justify-content-center bg-dark"><span class="flaticon-handshake"></span></div>
+				              	<div class="icon d-flex align-items-center justify-content-center bg-dark" ><span class="flaticon-handshake"></span></div>
 				              	<div class="text w-100">
 					                <h3 class="heading mb-2">Sélectionnez la meilleure offre</h3>
 					              </div>
@@ -133,7 +136,7 @@
 					            </div>      
 					          </div>
 					        </div>
-					        <p><a href="#" class="btn py-3 px-4" style="background-color: rgb(245, 152, 46);">Réservez votre voiture idéale</a></p>
+					        <p><a href="connexion.html" class="btn py-3 px-4" style="background-color: rgb(245, 152, 46); margin-left: 75px;">Réservez votre voiture idéale</a></p>
 	  						</div>
 	  					</div>
 	  				</div>
@@ -161,12 +164,12 @@
 		    						<h2 class="mb-0"><a href="#">Mercedes Grand Sedan</a></h2>
 		    						<div class="d-flex mb-3">
 			    						<span class="cat">Citroen</span>
-			    						<p class="price ml-auto">$1000 <span>/day</span></p>
+			    						<p class="price ml-auto">$1000<span>/day</span></p>
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
                       <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                      <a class="btn btn-dark py-2 mr-1"
-                        onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                      <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                        >Details</a>
                     </p>
 		    					</div>
 		    				</div>
@@ -182,9 +185,9 @@
 			    						<p class="price ml-auto">$600 <span>/day</span></p>
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
-                      <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                      <a class="btn btn-dark py-2 mr-1"
-                        onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                      <a href="connexion.html" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
+                      <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                        >Details</a>
                     </p>
 		    					</div>
 		    				</div>
@@ -200,7 +203,7 @@
 			    						<p class="price ml-auto">$500 <span>/day</span></p>
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
-                      <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
+                      <a href="connexion.html" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
                       <a class="btn btn-dark py-2 mr-1" href="car-single.html"
                         >Details</a>
                     </p>
@@ -218,9 +221,9 @@
 			    						<p class="price ml-auto">$700 <span>/day</span></p>
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
-                      <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                      <a class="btn btn-dark py-2 mr-1"
-                        onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                      <a href="connexion.html" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
+                      <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                        >Details</a>
                     </p>
 		    					</div>
 		    				</div>
@@ -236,9 +239,9 @@
 			    						<p class="price ml-auto">$700 <span>/day</span></p>
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
-                      <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                      <a class="btn btn-dark py-2 mr-1"
-                        onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                      <a href="connexion.html" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
+                      <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                        >Details</a>
                     </p>
 		    					</div>
 		    				</div>
@@ -252,12 +255,12 @@
                         <h2 class="mb-0"><a href="#">Bugatti</a></h2>
                         <div class="d-flex mb-3">
                             <span class="cat">Isuzu</span>
-                            <p class="price ml-auto">$700 <span>/day</span></p>
+                            <p class="price ml-auto">$700<span>/day</span></p>
                         </div>
                         <p class="d-flex mb-0 d-block">
-                            <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                            <a class="btn btn-dark py-2 mr-1"
-                                onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                          <a href="connexion.html" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
+                          <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                            >Details</a>
                         </p>
                     </div>
                 </div>
@@ -273,18 +276,19 @@
 			    						<p class="price ml-auto">$700 <span>/day</span></p>
 		    						</div>
 		    						<p class="d-flex mb-0 d-block">
-                      <a href="#" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
-                      <a class="btn btn-dark py-2 mr-1"
-                        onclick="openCarDetailsModal('Mercedes Grand Sedan', 'Citroen', 'Essence', '5', '5')">Details</a>
+                      <a href="connexion.html" class="btn py-2 mr-1" style="background-color: rgb(245, 152, 46);">Reservation</a>
+                      <a class="btn btn-dark py-2 mr-1" href="car-single.html"
+                        >Details</a>
                     </p>
 		    					</div>
 		    				</div>
     					</div>
     				</div>
 
+
             <!-- Ajoutez ceci après la fin de la balise </div> avec la classe "carousel-car owl-carousel" -->
-              <div class="modal fade" id="carDetailsModal" tabindex="-1" role="dialog" aria-labelledby="carDetailsModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
+              <!-- <div class="modal fade" id="carDetailsModal" tabindex="-1" role="dialog" aria-labelledby="carDetailsModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="carDetailsModalLabel">Détails du véhicule</h5>
@@ -304,7 +308,7 @@
                         </div>
                     </div>
                 </div>
-              </div>
+              </div> -->
     			</div>
     		</div>
     	</div>
@@ -320,8 +324,12 @@
 	          	<span class="subheading">A propos de nous</span>
 	            <h2 class="mb-4">Bienvenu à Mara Auto</h2>
 
-	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	            <p>
+                Chez MARA AUTO, nous comprenons que chaque voyage est unique, et c'est pourquoi nous nous engageons à vous offrir un service de location de voitures personnalisé et de qualité supérieure. </p>
+              
+	            <p> Que vous ayez besoin d'une voiture pour un voyage d'affaires, des vacances en famille ou simplement pour explorer de nouveaux horizons, nous avons la solution idéale pour vous.
+
+                Notre vaste flotte de véhicules modernes et bien entretenus vous offre un large éventail d'options à choisir, du compact économe en carburant au spacieux SUV tout-terrain. Nous mettons un point d'honneur à vous fournir des véhicules fiables et confortables, pour que votre expérience de conduite soit aussi agréable que possible.</p>
 	            <p><a href="#" class="btn py-3 px-4" style="background-color: rgb(245, 152, 46);">Recherchez un véhicule</a></p>
 	          </div>
 					</div>
@@ -342,7 +350,7 @@
 						<div class="services services-2 w-100 text-center">
             	<div class="icon d-flex align-items-center justify-content-center" style="background-color: rgb(245, 152, 46);"><span class="flaticon-wedding-car"></span></div>
             	<div class="text w-100">
-                <h3 class="heading mb-2">Wedding Ceremony</h3>
+                <h3 class="heading mb-2">Cérémonie de mariage</h3>
                 <p>Nous mettons à votre disposition des voitures entièrement décorées avec un chauffeur pour le trajet</p>
               </div>
             </div>
@@ -577,8 +585,8 @@
               </ul>
             </div>
           </div>
-          <!-- <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget ">
               <h2 class="ftco-heading-2">Information</h2>
               <ul class="list-unstyled">
                 <li><a href="#" class="py-2 d-block">A propos</a></li>
@@ -588,9 +596,9 @@
                 <li><a href="#" class="py-2 d-block">Politique &amp; de confidentialité et cookies</a></li>
               </ul>
             </div>
-          </div> -->
-          <!-- <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
+          </div> 
+          <div class="col-md">
+             <div class="">
               <h2 class="ftco-heading-2">Service client</h2>
               <ul class="list-unstyled">
                 <li><a href="#" class="py-2 d-block">FAQ</a></li>
@@ -600,27 +608,25 @@
                 <li><a href="#" class="py-2 d-block">Contactez-nous</a></li>
               </ul>
             </div>
-          </div> -->
-          <!-- <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget">
             	<h2 class="ftco-heading-2">Vous avez des questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">99CR+4F9 Fidjrossè-Calvaire, Cotonou</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">97-97-12-25</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">Contact@it-servicegroup.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
-          </div> -->
+          </div> 
         </div>
         <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
+          <!-- <div class="col-md-12 text-center">
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a></p>
+          </div> -->
         </div>
       </div>
     </footer>
