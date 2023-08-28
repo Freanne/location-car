@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mara-Auto</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <style>
+	.sec1{
+		display: flex;
+	}
+	#sidebar {
+    width: 420px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+
+  #content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  #dir{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.form-control.custom-select {
+  border-radius: 5px;
+}
+#btp{
+  margin-top: 36px;
+  height: 50px;
+  width: 86px;
+}
+#for{
+  width: 800px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+.formulaire{                                                                                                                                                        
+  margin-left: 80px;
+}
+.card{
+  width: 280px;
+  border-radius: 20px;
+}
+#cardy{
+  color: white;
+  width: 46px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+  </style>
+  <body>
+    
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span><img src="images/processed-removebg-preview.png" alt="" width="90"></span></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
+	          <li class="nav-item"><a href="nosvoitures.html" class="nav-link">Nos voitures</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contactez-nous</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Se connecter</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    
+    
+<section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/car-5.jpg'); background-position: center top;" data-stellar-background-ratio="0.5">
+	<div class="overlay"></div>
+	<div class="container"> <br> <br> <br> <br>
+	  <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+		<div class="col-md-6 ftco-animate pb-5">
+		  <div class="search-form">
+			<form action="#" class="search-form">
+			  <div class="form-group">
+				<span class="icon icon-search"></span>
+				<input type="text" id="bdr" class="form-control rounded-pill border-0" onfocus="this.style.backgroundColor='rgba(0,0,0,0)';" style="background: #00000000; backdrop-filter: blur(5px);" placeholder="Rechercher une voiture...">
+			  </div>
+			</form> <br> <br> <br>
+		  </div>
+		  <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span><a href="services.html">Services</a> <i class="ion-ios-arrow-forward"></i></span></p>
+		  <h1 class="mb-3 bread">Nos Voitures</h1>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+	<section class="sec1">
+		<div id="sidebar">
+
+				<ul class="sidebar-nav" id="sidebar-nav">
+			
+				  <li class="nav-item">
+					<a class="nav-link " href="index.html">
+					  <i class="bi bi-grid"></i>
+					  <span>Tableau de Bord</span>
+					</a>
+				  </li><!-- End Dashboard Nav -->
+			
+				  <li class="nav-heading">Types</li>
+					 <div class="form-check">
+					   <input class="form-check-input" type="checkbox" value="manuel" id="manuelCheckbox">
+					   <label class="form-check-label" for="manuelCheckbox">
+					   Manuel
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" value="automatique" id="automatiqueCheckbox">
+					<label class="form-check-label" for="automatiqueCheckbox">
+					  Automatique
+					</label>
+				  </div>
+				  <li class="nav-heading">CAPACITE</li>
+				  <div class="form-group">
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="2personnes" id="personnes2Checkbox">
+					  <label class="form-check-label" for="personnes2Checkbox">
+						2 Personnes
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="4personnes" id="personnes4Checkbox">
+					  <label class="form-check-label" for="personnes4Checkbox">
+						4 Personnes
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="6personnes" id="personnes6Checkbox">
+					  <label class="form-check-label" for="personnes6Checkbox">
+						6 Personnes
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="8personnes" id="personnes8Checkbox">
+					  <label class="form-check-label" for="personnes8Checkbox">
+						8 Personnes
+					  </label>
+					</div>
+					<div class="form-check">
+					  <input class="form-check-input" type="checkbox" value="8ouplus" id="personnes8PlusCheckbox">
+					  <label class="form-check-label" for="personnes8PlusCheckbox">
+						8 ou plus
+					  </label>
+					</div>
+				  </div>
+			
+				  <div class="form-group">
+					<label>Carburant:</label>
+					<div class="range-container">
+					  <div class="range-bar">
+						<div class="range-point" id="fuelPoint" style="left: 50%;"></div>
+					  </div>
+					  <p class="font-weight-bold mt-2">Essence: <span id="fuelAmount">50</span></p>
+					</div>
+				  </div>
+				  
+				  <div class="form-group">
+					<label>Prix:</label>
+					<div class="range-container">
+					  <div class="range-bar">
+						<div class="range-point" id="fuelPoint" style="left: 70%;"></div>
+					  </div>
+					  <p class="font-weight-bold mt-2">Essence: <span id="fuelAmount">50</span></p>
+					</div>
+				  </div>
+				</ul>
+		  </div>
+		  <div id="content">
+                
+      <div id="for" class="breadcrumb">
+        <form class="formulaire">
+            <div class="row">
+                <div class="col-md-3">
+                    <section id="select2">
+                        <label for="select1">Position</label>
+                        <select name="position" id="select1" class="form-control custom-select">
+                            <option value="" id="options">Choisis ta ville</option>
+                            <option  value="option1">Cotonou</option>
+                            <option  value="option2">Calavi</option>
+                            <option  value="option3">Bohicon</option>
+                            <option  value="option4">Porto-Novo</option>
+                            <option  value="option5">Ouidah</option>
+                            <option  value="option6">Savè</option>
+                            <option  value="option7">Parakou</option>
+                            <option  value="option8">Natitingou</option>
+                            <option  value="option9">Ketou</option>
+                            <option  value="option10">Malanville</option>
+                        </select>
+                    </section>
+                </div>
+                
+                <div class="col-md-3 mb-3">
+                    <section id="select2">
+                        <label for="dateReception">Date de reception</label>
+                        <input type="date" class="form-control" id="dateReception" name="daterange">
+                    </section>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <section id="select2">
+                        <label for="dateRetour">Date de retour</label>
+                        <input type="date" class="form-control" id="dateRetour" name="daterange">
+                    </section>
+                </div>
+                <div class="col-md-3 mb-3">
+                  
+                  <button type="button" id="btp" class="btn btn-primary">Louer</button>
+                  
+                </div>
+            </div>
+        </form>
+    </div>
+	<section class="section dashboard">
+		<div class="container mt-5">
+		  <div class="row">
+			  <div class="col-md-4">
+				  <div class="card">
+					<p id="cardy"class="card-text">
+					  <span class="stars"> <strong> ★ 4.0</strong></span>
+				  </p>
+					  <img src="./assets/img/img1.png" class="card-img-top" alt="Car 1">
+					  <div class="card-body">
+						  <h5 class="card-title">Car Model 1</h5>
+						 
+						  <p class="card-text">
+							  <i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+							  <i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+							  <i class="fas fa-users"></i> 4pers
+						  </p>
+						  $80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						  <a href="#" class="btn btn-warning">Louer</a>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="col-md-4">
+				  <div class="card">
+					<p id="cardy" class="card-text">
+					  <span class="stars"> <strong>★ 3.5</strong></span>
+				  </p>
+					  <img src="./assets/img/img5.png" class="card-img-top" alt="Car 2">
+					  <div class="card-body">
+						  <h5 class="card-title">Car Model 2</h5>
+						  
+						  <p class="card-text">
+							  <i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+							  <i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+							  <i class="fas fa-users"></i> 2pers
+						  </p>
+						  $75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						  <a href="#" class="btn btn-warning">Louer</a>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="col-md-4">
+				  <div class="card">
+					<p id="cardy" class="card-text">
+					  <span class="stars"> <strong>★ 2.0</strong></span>
+				  </p>
+					  <div class="card-body">
+						<img src="./assets/img/img7.png" class="card-img-top" alt="Car 3">
+						  <h5 class="card-title">Car Model 3</h5>
+						  <p class="card-text">
+							  <i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+							  <i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+							  <i class="fas fa-users"></i> 6pers
+						  </p>
+						  $90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						  <a href="#" class="btn btn-warning">Louer</a>
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  
+	  <div class="container mt-5">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 5.0</strong></span>
+			</p>
+					<img src="./assets/img/img8.png" class="card-img-top" alt="Car 1">
+					<div class="card-body">
+						<h5 class="card-title">Car Model 1</h5>
+						
+						<p class="card-text">
+							<i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+							<i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+							<i class="fas fa-users"></i> 4pers
+						</p>
+						$80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="#" class="btn btn-warning">Louer</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+				  <p id="cardy" class="card-text">
+					<span class="stars"> <strong>★ 2.5</strong></span>
+				</p>
+					<img src="./assets/img/img9.png" class="card-img-top" alt="Car 2">
+					<div class="card-body">
+						<h5 class="card-title">Car Model 2</h5>
+						
+						<p class="card-text">
+							<i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+							<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+							<i class="fas fa-users"></i> 2pers
+						</p>
+						$75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="#" class="btn btn-warning">Louer</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+				  <p id="cardy" class="card-text">
+					<span class="stars"> <strong>★ 3.5</strong></span>
+				</p>
+					<div class="card-body">
+					  <img src="./assets/img/img17.png" class="card-img-top" alt="Car 3">
+						<h5 class="card-title">Car Model 3</h5>
+						<p class="card-text">
+							<i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+							<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+							<i class="fas fa-users"></i> 6pers
+						</p>
+						$90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="#" class="btn btn-warning">Louer</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+  
+	<div class="container mt-5">
+	  <div class="row">
+		  <div class="col-md-4">
+			  <div class="card">
+				<p id="cardy" class="card-text">
+				  <span class="stars"> <strong>★ 3.5</strong></span>
+			  </p>
+				  <img src="./assets/img/img18.png" class="card-img-top" alt="Car 1">
+				  <div class="card-body">
+					  <h5 class="card-title">Car Model 1</h5>
+					  
+					  <p class="card-text">
+						  <i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+						  <i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+						  <i class="fas fa-users"></i> 4pers
+					  </p>
+					  $80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					  <a href="#" class="btn btn-warning">Louer</a>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="card">
+				<p id="cardy" class="card-text">
+				  <span class="stars"> <strong>★ 3.5</strong></span>
+			  </p>
+				  <img src="./assets/img/img25.png" class="card-img-top" alt="Car 2">
+				  <div class="card-body">
+					  <h5 class="card-title">Car Model 2</h5>
+					  
+					  <p class="card-text">
+						  <i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+						  <i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						  <i class="fas fa-users"></i> 2pers
+					  </p>
+					  $75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					  <a href="#" class="btn btn-warning">Louer</a>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="card">
+				<p id="cardy" class="card-text">
+				  <span class="stars"> <strong>★ 3.5</strong></span>
+			  </p>
+				  <div class="card-body">
+					<img src="./assets/img/img13.png" class="card-img-top" alt="Car 3">
+					  <h5 class="card-title">Car Model 3</h5>
+					  <p class="card-text">
+						  <i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+						  <i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						  <i class="fas fa-users"></i> 6pers
+					  </p>
+					  $90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					  <a href="#" class="btn btn-warning">Louer</a>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  </section>
+  <br>
+  
+  <div id="dir"> <button type="button" id="showButton" class="btn btn-warning">Voir Plus</button> </div>
+
+	 
+	<section id="hiddenSection" style="display: none;">
+	  <div class="container mt-5">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card">
+				  <p id="cardy" class="card-text">
+					<span class="stars"> <strong>★ 3.5</strong></span>
+				</p>
+					<img src="./assets/img/img12.png" class="card-img-top" alt="Car 1">
+					<div class="card-body">
+						<h5 class="card-title">Car Model 1</h5>
+						
+						<p class="card-text">
+							<i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+							<i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+							<i class="fas fa-users"></i> 4pers
+						</p>
+						$80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="#" class="btn btn-warning">Louer</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+				  <p id="cardy" class="card-text">
+					<span class="stars"> <strong>★ 3.5</strong></span>
+				</p>
+					<img src="./assets/img/img6.png" class="card-img-top" alt="Car 2">
+					<div class="card-body">
+						<h5 class="card-title">Car Model 2</h5>
+						
+						<p class="card-text">
+							<i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+							<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+							<i class="fas fa-users"></i> 2pers
+						</p>
+						$75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="#" class="btn btn-warning">Louer</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+				  <p id="cardy" class="card-text">
+					<span class="stars"> <strong>★ 3.5</strong></span>
+				</p>
+					<div class="card-body">
+					  <img src="./assets/img/img20.png" class="card-img-top" alt="Car 3">
+						<h5 class="card-title">Car Model 3</h5>
+						<p class="card-text">
+							<i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+							<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+							<i class="fas fa-users"></i> 6pers
+						</p>
+						$90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+						<a href="#" class="btn btn-warning">Louer</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>  
+	  
+  
+  
+	<div class="container mt-5">
+	  <div class="row">
+		  <div class="col-md-4">
+			  <div class="card">
+				<p id="cardy" class="card-text">
+				  <span class="stars"> <strong>★ 3.5</strong></span>
+			  </p>
+				  <img src="./assets/img/img11.png" class="card-img-top" alt="Car 1">
+				  <div class="card-body">
+					  <h5 class="card-title">Car Model 1</h5>
+					  
+					  <p class="card-text">
+						  <i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+						  <i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+						  <i class="fas fa-users"></i> 4pers
+					  </p>
+					  $80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					  <a href="#" class="btn btn-warning">Louer</a>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="card">
+				<p id="cardy" class="card-text">
+				  <span class="stars"> <strong>★ 3.5</strong></span>
+			  </p>
+				  <img src="./assets/img/img31.png" class="card-img-top" alt="Car 2">
+				  <div class="card-body">
+					  <h5 class="card-title">Car Model 2</h5>
+					  
+					  <p class="card-text">
+						  <i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+						  <i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						  <i class="fas fa-users"></i> 2pers
+					  </p>
+					  $75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					  <a href="#" class="btn btn-warning">Louer</a>
+				  </div>
+			  </div>
+		  </div>
+		  <div class="col-md-4">
+			  <div class="card">
+				<p id="cardy" class="card-text">
+				  <span class="stars"> <strong>★ 3.5</strong></span>
+			  </p>
+				  <div class="card-body">
+					<img src="./assets/img/img40.png" class="card-img-top" alt="Car 3">
+					  <h5 class="card-title">Car Model 3</h5>
+					  <p class="card-text">
+						  <i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+						  <i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						  <i class="fas fa-users"></i> 6pers
+					  </p>
+					 $90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					  <a href="#" class="btn btn-warning">Louer</a>
+				  </div>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  
+  
+  <div class="container mt-5">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 3.5</strong></span>
+			</p>
+				<img src="./assets/img/img30.png" class="card-img-top" alt="Car 1">
+				<div class="card-body">
+					<h5 class="card-title">Car Model 1</h5>
+					
+					<p class="card-text">
+						<i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+						<i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+						<i class="fas fa-users"></i> 4pers
+					</p>
+					$80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="#" class="btn btn-warning">Louer</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 3.5</strong></span>
+			</p>
+				<img src="./assets/img/img35.png" class="card-img-top" alt="Car 2">
+				<div class="card-body">
+					<h5 class="card-title">Car Model 2</h5>
+					
+					<p class="card-text">
+						<i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+						<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						<i class="fas fa-users"></i> 2pers
+					</p>
+					$75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="#" class="btn btn-warning">Louer</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 3.5</strong></span>
+			</p>
+				<div class="card-body">
+				  <img src="./assets/img/img37.png" class="card-img-top" alt="Car 3">
+					<h5 class="card-title">Car Model 3</h5>
+					<p class="card-text">
+						<i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+						<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						<i class="fas fa-users"></i> 6pers
+					</p>
+					$90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="#" class="btn btn-warning">Louer</a>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  <div class="container mt-5">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 3.5</strong></span>
+			</p>
+				<img src="./assets/img/img24.png" class="card-img-top" alt="Car 1">
+				<div class="card-body">
+					<h5 class="card-title">Car Model 1</h5>
+					
+					<p class="card-text">
+						<i class="fas fa-gas-pump"></i> 70L &nbsp;&nbsp;
+						<i class="fas fa-steering-wheel"></i> Automatic &nbsp;&nbsp;
+						<i class="fas fa-users"></i> 4pers
+					</p>
+					$80/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="#" class="btn btn-warning">Louer</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 3.5</strong></span>
+			</p>
+				<img src="./assets/img/img36.png" class="card-img-top" alt="Car 2">
+				<div class="card-body">
+					<h5 class="card-title">Car Model 2</h5>
+					
+					<p class="card-text">
+						<i class="fas fa-gas-pump"></i> 60L &nbsp;&nbsp;
+						<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						<i class="fas fa-users"></i> 2pers
+					</p>
+					$75/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="#" class="btn btn-warning">Louer</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+			  <p id="cardy" class="card-text">
+				<span class="stars"> <strong>★ 3.5</strong></span>
+			</p>
+				<div class="card-body">
+				  <img src="./assets/img/img28.png" class="card-img-top" alt="Car 3">
+					<h5 class="card-title">Car Model 3</h5>
+					<p class="card-text">
+						<i class="fas fa-gas-pump"></i> 80L &nbsp;&nbsp;
+						<i class="fas fa-steering-wheel"></i> Manual &nbsp;&nbsp;
+						<i class="fas fa-users"></i> 6pers
+					</p>
+					$90/day &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					<a href="#" class="btn btn-warning">Louer</a>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+    <div id="dir"> <button type="button" id="hideButton" class="btn btn-warning" style="display: none;">Voir Moins</button> </div> 
+	</section>
+    </div>
+		  </div>
+	</section>
+
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+		  <div class="row mb-5">
+			<div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				<a href="index.html"><span><img src="images/processed-removebg-preview.png" alt="" width="90"></span></a>
+				<p>Votre meilleur agence pour la location de voitures de tout genre</p>
+				<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+				  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+				  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+				  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+				</ul>
+			  </div>
+			</div>
+			<!-- <div class="col-md">
+			  <div class="ftco-footer-widget mb-4 ml-md-5">
+				<h2 class="ftco-heading-2">Information</h2>
+				<ul class="list-unstyled">
+				  <li><a href="#" class="py-2 d-block">A propos</a></li>
+				  <li><a href="#" class="py-2 d-block">Prestation  de service</a></li>
+				  <li><a href="#" class="py-2 d-block">Termes et Conditions</a></li>
+				  <li><a href="#" class="py-2 d-block">Garantie du meilleur prix</a></li>
+				  <li><a href="#" class="py-2 d-block">Politique &amp; de confidentialité et cookies</a></li>
+				</ul>
+			  </div>
+			</div> -->
+			<!-- <div class="col-md">
+			   <div class="ftco-footer-widget mb-4">
+				<h2 class="ftco-heading-2">Service client</h2>
+				<ul class="list-unstyled">
+				  <li><a href="#" class="py-2 d-block">FAQ</a></li>
+				  <li><a href="#" class="py-2 d-block">Modalité de paiement</a></li>
+				  <li><a href="#" class="py-2 d-block">Conseils de réservation</a></li>
+				  <li><a href="#" class="py-2 d-block">Comment ça fonctionne</a></li>
+				  <li><a href="#" class="py-2 d-block">Contactez-nous</a></li>
+				</ul>
+			  </div>
+			</div> -->
+			<!-- <div class="col-md">
+			  <div class="ftco-footer-widget mb-4">
+				  <h2 class="ftco-heading-2">Vous avez des questions?</h2>
+				  <div class="block-23 mb-3">
+					<ul>
+					  <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+					  <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+					  <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+					</ul>
+				  </div>
+			  </div>
+			</div> -->
+		  </div>
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    const showButton = document.getElementById("showButton");
+    const hideButton = document.getElementById("hideButton");
+    const hiddenSection = document.getElementById("hiddenSection");
+
+    showButton.addEventListener("click", () => {
+      hiddenSection.style.display = "block";
+      showButton.style.display = "none";
+      hideButton.style.display = "block";
+    });
+
+    hideButton.addEventListener("click", () => {
+      hiddenSection.style.display = "none";
+      showButton.style.display = "block";
+      hideButton.style.display = "none";
+    });
+  </script>
+
+
+
+    
+  </body>
+</html>
