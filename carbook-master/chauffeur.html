@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="en">
+  <head>
+    <title>Carbook - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -20,60 +21,36 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Devenir Chauffeur</title>
     <style>
-        /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+      .navbar-nav .nav-item.active .nav-link {
+    color: orange; /* Changer la couleur du texte */
+      }
+      .connection-section{
+        /*text-align: center;*/
+        background-color: aliceblue;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.3);
+        width:500px;
+        margin-top: 50px;
 
-header {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
-}
-
-form {
-    display: grid;
-    gap: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-button {
-    background-color: #f5922e;
-    color: #fff;
-    cursor: pointer;
-}
-
+      }
+       img{
+        margin-left: 10rem;
+      }
+      .form-label-group{
+        margin-top: 10px;
+      }
     </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  </head>
+  <body>
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.html"><span><img src="images/processed-removebg-preview.png" alt="" width="90"></span></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -82,116 +59,175 @@ button {
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Accueil</a></li>
+	          <li class="nav-item active" ><a href="index.html" class="nav-link">Accueil</a></li>
 	          <li class="nav-item"><a href="about.html" class="nav-link">A propos</a></li>
 	          <li class="nav-item"><a href="services.html" class="nav-link">Nos Services</a></li>
 	          <li class="nav-item"><a href="user-dashboard.html" class="nav-link">Nos voitures</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contactez-nous</a></li>
-            <li class="nav-item"><a href="connecion.html" class="nav-link">Se connecter</a></li>
+            <li class="nav-item"><a href="connexion.html" class="nav-link">Se connecter</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/nordwood-themes-q8U1YgBaRQk-unsplash.jpg');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
-            <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
-              <h1 class="mb-3 bread">Contactez Nous</h1>
-            </div>
+    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/firmbee-com-SpVHcbuKi6E-unsplash.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-start">
+          <div class="col-md-9 ftco-animate pb-5">
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Accueil <i class="ion-ios-arrow-forward"></i></a></span> <span>Contact <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Se connecter</h1>
           </div>
         </div>
-        
+      </div>
     </section>
 
-        <section class="ftco-section contact-section">
-            <div class="container">
-                <form action="traiter_formulaire.php" method="POST" enctype="multipart/form-data">
-                    <label for="nom">Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
-        
-                    <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" required>
-        
-                    <label for="adresse">Adresse :</label>
-                    <textarea id="adresse" name="adresse" rows="4" required></textarea>
-        
-                    <label for="photo">Photo :</label>
-                    <input type="file" id="photo" name="photo" accept="image/*" required>
-        
-                    <!-- Ajoutez d'autres champs ici (numéro de téléphone, etc.) -->
-        
-                    <button type="submit">Envoyer la demande</button>
-                </form>
-            </div>
-        </section>
-        
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                <h2 class="ftco-heading-2"><a href="#" class="logo">Car<span>book</span></a></h2>
-                <p>Votre meilleur agence pour la location de voitures de tout genre</p>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                  <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4 ml-md-5">
-                <h2 class="ftco-heading-2">Information</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="py-2 d-block">A propos</a></li>
-                  <li><a href="#" class="py-2 d-block">Prestation  de service</a></li>
-                  <li><a href="#" class="py-2 d-block">Termes et Conditions</a></li>
-                  <li><a href="#" class="py-2 d-block">Garantie du meilleur prix</a></li>
-                  <li><a href="#" class="py-2 d-block">Politique &amp; de confidentialité et cookies</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md">
-               <div class="ftco-footer-widget mb-4">
-                <h2 class="ftco-heading-2">Service client</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="py-2 d-block">FAQ</a></li>
-                  <li><a href="#" class="py-2 d-block">Modalité de paiement</a></li>
-                  <li><a href="#" class="py-2 d-block">Conseils de réservation</a></li>
-                  <li><a href="#" class="py-2 d-block">Comment ça fonctionne</a></li>
-                  <li><a href="#" class="py-2 d-block">Contactez-nous</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="ftco-footer-widget mb-4">
-                  <h2 class="ftco-heading-2">Vous avez des questions?</h2>
-                  <div class="block-23 mb-3">
-                    <ul>
-                      <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                      <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                      <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
-                    </ul>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-  
-              <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-            </div>
-          </div>
-        </div>
-      </footer>
 
-      <!-- loader -->
+        <section class="ftco-section ">
+     
+          <h4 style="text-align: center;">Veillez renseignez vos informations pour devenir notre chauffeur.</h4>
+
+          <div class="container connection-section" >
+
+            <img src="images/processed-removebg-preview.png" alt="logo"  width="100px" >
+            <form class="form-driver-signup" id="driver-signup-form" action="" method="post" novalidate="novalidate">
+            
+            
+            <div class="form-label-group">
+              <label for="input-fname">Prénom</label>
+              <input type="text" id="input-fname" name="first_name" class="form-control valid" placeholder="Prénom" autofocus="" aria-invalid="false">
+            </div>
+
+            <div class="form-label-group">
+              <label for="input-lname">Nom de Famille</label>
+              <input type="text" id="input-lname" name="last_name" class="form-control" placeholder="Nom de Famille" autofocus="">
+            </div>
+
+            <div class="form-label-group">
+              <label for="input-password">Adresse email</label>
+              <input type="email" id="input-email" name="email" class="form-control" placeholder="Adresse email" autofocus="">
+            </div>
+
+            <div class="form-label-group">
+              <label for="input-phone">Telephone</label>
+              <input type="phone" id="input-phone" name="phone" class="form-control" placeholder="Phone" autofocus="">
+            </div>
+            
+            <div class="form-group row city-selection">
+              <label for="input-city" class="col-md-4">Ville</label>
+                <div class="col-md-8">
+                  <select name="" id="">
+                    <option value="">Sélectionnez une ville de votre choix</option>
+                    <option value="">Cotonou, Benin</option>
+                    <option value="">Porto-Novo, Benin</option>
+                    <option value="">Parakou, Benin</option>
+                    <option value="">Bohicon, Benin</option>
+                    <option value="">Natitingou, Benin</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="form-label-group">
+              <label for="photo">Téléchargez votre CV ici </label>
+              <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+            </div>
+          
+              <!--<div class="row">
+                   <div class="col-4 country-code-selection">
+                       <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdown-language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <span class="flag-icon flag-icon-bj nav-icon"></span>
+                          </button>
+                          <select name="" id="" class="dropdown-menu" aria-labelledby="dropdown-language" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                          
+                              <option class="dropdown-item" data-code="228"><span class="flag-icon flag-icon-tg"></span> Togo</option>
+                              <option class="dropdown-item" data-code="229"><span class="flag-icon flag-icon-bj"></span> Benin</option>
+                              <option class="dropdown-item" data-code="226"><span class="flag-icon flag-icon-bf"></span> Burkina Faso</option>
+                              <option class="dropdown-item" data-code="237"><span class="flag-icon flag-icon-cm"></span> Cameroun</option>
+                              <option class="dropdown-item" data-code="225"><span class="flag-icon flag-icon-ci"></span> Côte d’Ivoire</option>
+                              <option class="dropdown-item" data-code="241"><span class="flag-icon flag-icon-ga"></span> Gabon</option>
+                              <option class="dropdown-item" data-code="223"><span class="flag-icon flag-icon-ml"></span> Mali</option>
+                              <option class="dropdown-item" data-code="221"><span class="flag-icon flag-icon-sn"></span> Senegal</option>
+                         
+                        </select>
+                      </div> 
+                       <span class="country-code-label">+229</span>
+                      <input type="hidden" id="country-code-value" value="229" name="country_phone_code"> 
+                  </div> -->
+              
+                                                  <!-- <input type="hidden" value="https://gozem.co/bj/fr/conduisez-avec-nous" name="current_url">
+                  <input type="hidden" class="form-control" name="action" value="driver_signup"> 
+             </div> -->
+
+            
+            
+            
+                    <!-- <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdown-city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Sélectionnez une ville                                    </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-city">
+                        <li class="dropdown-item" data-id="5c18e9e26f2b922553babd4f">Cotonou, Benin</li>
+                        <li class="dropdown-item" data-id="5d447beb09e3ab5ef6aee61b">Porto-Novo, Benin</li>
+                        <li class="dropdown-item" data-id="5e15d93a53dc495a7c7806db">Parakou, Benin</li>
+                        <li class="dropdown-item" data-id="5e15da3bb95f235a72a25728">Bohicon, Benin</li>
+                        <li class="dropdown-item" data-id="5f3cdc7b1dba9e22a3109e25">Natitingou, Benin</li>                                    </ul>
+                    </div> -->
+
+                    
+              
+            
+            
+            <!-- <input type="hidden" class="form-control" name="referrer" value="https://gozem.co/bj/fr/coronavirus/"> -->
+            <button type="submit" class="btn btn-secondary" style="margin-top: 5em; margin-left: 10em;">Rejoignez-nous</button>
+            
+        </form>
+      </div>
+</section>
+        <footer class="ftco-footer ftco-bg-dark ftco-section">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                  <a href="index.html"><span><img src="images/processed-removebg-preview.png" alt="" width="90"></span></a>
+                  <p>Votre meilleur agence pour la location de voitures de tout genre</p>
+                  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                    <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                    <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+
+                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+        <script>
+          document.getElementById('pdfFile').addEventListener('change', function(event) {
+              const fileInput = event.target;
+              const file = fileInput.files[0];
+          
+              if (file) {
+                  if (file.type === 'application/pdf' && file.size <= 1024) {
+                      // Fichier PDF valide et de taille inférieure à 2 Mo
+                      alert('Fichier PDF valide.');
+                  } else {
+                      // Fichier invalide
+                      fileInput.value = ''; // Réinitialise le champ de fichier
+                      alert('Le fichier doit être un PDF de moins de 2 Mo.');
+                  }
+              }
+          });
+          </script>
+    <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
